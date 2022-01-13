@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<style>
+table, th, td {
+  border:1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+</style>
+<body>
+
+ <table style="width:100%">
+  <tr>
+    <th>Note type</th>
+    <th>Note</th>
+     <th>Status</th>
+    <th>Created on</th>
+     <th>Created by</th>
+     <th>Updated on</th>
+  </tr>
+  <tr>
+
+    <td>
+  <select name="Status" id="Status">
+    <option value="open" > open </option>
+    <option value="closed" > closed </option>
+  </select>
+  </td>
+  
+   <td>
+ <p th:text="${data}"></p>
+  </td>
+  </table>
+
+</body>
+</html>
